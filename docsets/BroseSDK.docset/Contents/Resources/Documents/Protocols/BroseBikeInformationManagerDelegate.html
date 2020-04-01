@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BroseBikeInformationManagerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link href='https://www.brose-ebike.com/de/media/layout/logo/brose-logo-notagline.png' />
+
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/BroseBikeInformationManagerDelegate" class="dashAnchor"></a>
+    <a title="BroseBikeInformationManagerDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">BroseSDK for iOS</a> (79% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">BroseSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BroseBikeInformationManagerDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../getting-started.html">Getting Started</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../installation.html">Installation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../release-notes.html">Release Notes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BroseBatteryData.html">BroseBatteryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BroseBike.html">BroseBike</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:8BroseSDK0A15ConnectableBikeC">BroseConnectableBike</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BroseConnectedBike.html">BroseConnectedBike</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BroseDriveUnitData.html">BroseDriveUnitData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BroseDriveUnitData/Thrustfactor.html">– Thrustfactor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BroseHMIData.html">BroseHMIData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BroseSDK.html">BroseSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BroseSDKConfiguration.html">BroseSDKConfiguration</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BroseLogLevel.html">BroseLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BroseSupportProfile.html">BroseSupportProfile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionEvent.html">ConnectionEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BroseBikeInformationManager.html">BroseBikeInformationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BroseBikeInformationManagerDelegate.html">BroseBikeInformationManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BroseConnectionManager.html">BroseConnectionManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BroseConnectionManagerDelegate.html">BroseConnectionManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BroseLogger.html">BroseLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/BroseLiveBatteryData.html">BroseLiveBatteryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BroseLiveData.html">BroseLiveData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BroseLiveDriveUnitData.html">BroseLiveDriveUnitData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BroseLiveHMIData.html">BroseLiveHMIData</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BroseBikeInformationManagerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BroseBikeInformationManagerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Delegate to inform about changed information about the bike</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8BroseSDK0A30BikeInformationManagerDelegateP08receivedcD04bikeyAA0a9ConnectedC0C_tF"></a>
+                    <a name="//apple_ref/swift/Method/receivedBikeInformation(bike:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8BroseSDK0A30BikeInformationManagerDelegateP08receivedcD04bikeyAA0a9ConnectedC0C_tF">receivedBikeInformation(bike:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Informs about changes of the connected bike</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">receivedBikeInformation</span><span class="p">(</span><span class="nv">bike</span><span class="p">:</span> <span class="kt"><a href="../Classes/BroseConnectedBike.html">BroseConnectedBike</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bike</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The bike with an established connection</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8BroseSDK0A30BikeInformationManagerDelegateP16receivedLiveData04liveI0yAA0ahI0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/receivedLiveData(liveData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8BroseSDK0A30BikeInformationManagerDelegateP16receivedLiveData04liveI0yAA0ahI0V_tF">receivedLiveData(liveData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Informs about the live changing data (e.g. the speed)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">receivedLiveData</span><span class="p">(</span><span class="nv">liveData</span><span class="p">:</span> <span class="kt"><a href="../Structs/BroseLiveData.html">BroseLiveData</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>liveData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The live data of the bike</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-04-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

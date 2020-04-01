@@ -1,0 +1,222 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Backend/BroseAuthenticationService.swift",
+      "line": 25,
+      "symbol": "BroseAuthenticationServiceImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Backend/BroseBackendService.swift",
+      "line": 30,
+      "symbol": "BroseBackendServiceImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Backend/BroseBackendService.swift",
+      "line": 48,
+      "symbol": "BroseBackendServiceImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Backend/HTTPService.swift",
+      "line": 26,
+      "symbol": "HTTPServiceImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Backend/HTTPService.swift",
+      "line": 41,
+      "symbol": "HTTPServiceImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Backend/JsonHTTPService.swift",
+      "line": 26,
+      "symbol": "JsonHTTPServiceImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Backend/JsonHTTPService.swift",
+      "line": 48,
+      "symbol": "JsonHTTPServiceImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BluetoothManager.swift",
+      "line": 144,
+      "symbol": "BluetoothManagerImpl.centralManagerDidUpdateState(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BluetoothManager.swift",
+      "line": 149,
+      "symbol": "BluetoothManagerImpl.centralManager(_:didDiscover:advertisementData:rssi:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BluetoothManager.swift",
+      "line": 160,
+      "symbol": "BluetoothManagerImpl.centralManager(_:didDisconnectPeripheral:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BluetoothManager.swift",
+      "line": 164,
+      "symbol": "BluetoothManagerImpl.centralManager(_:didConnect:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BluetoothManager.swift",
+      "line": 173,
+      "symbol": "BluetoothManagerImpl.peripheral(_:didDiscoverServices:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BluetoothManager.swift",
+      "line": 177,
+      "symbol": "BluetoothManagerImpl.peripheral(_:didDiscoverCharacteristicsFor:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BluetoothManager.swift",
+      "line": 181,
+      "symbol": "BluetoothManagerImpl.peripheral(_:didUpdateValueFor:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BluetoothManager.swift",
+      "line": 185,
+      "symbol": "BluetoothManagerImpl.peripheral(_:didWriteValueFor:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BroseBikeInformationManager.swift",
+      "line": 58,
+      "symbol": "BroseBikeInformationManagerImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BroseBikeInformationManager.swift",
+      "line": 119,
+      "symbol": "BroseBikeInformationManagerImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BroseBikeInformationManager.swift",
+      "line": 151,
+      "symbol": "BroseBikeInformationManagerImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BroseConnectionManager.swift",
+      "line": 85,
+      "symbol": "BroseConnectionManagerImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BroseConnectionManager.swift",
+      "line": 129,
+      "symbol": "BroseConnectionManagerImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/BroseConnectionManager.swift",
+      "line": 145,
+      "symbol": "BroseConnectionManagerImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/Protobuf/BroseProtobufRequestService.swift",
+      "line": 45,
+      "symbol": "BroseProtobufRequestServiceImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/Protobuf/BroseProtobufRequestService.swift",
+      "line": 80,
+      "symbol": "BroseProtobufRequestServiceImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/Protobuf/BroseProtobufService.swift",
+      "line": 40,
+      "symbol": "BroseProtobufServiceImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Bluetooth/Protobuf/BroseProtobufService.swift",
+      "line": 62,
+      "symbol": "BroseProtobufServiceImpl",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/DataModel/BroseBike.swift",
+      "line": 76,
+      "symbol": "BroseBatteryData.Internal",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/DataModel/BroseLiveBatteryData.swift",
+      "line": 73,
+      "symbol": "BroseLiveBatteryData.Internal",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/DataModel/BroseLiveDriveUnitData.swift",
+      "line": 70,
+      "symbol": "BroseLiveDriveUnitData.FaultState",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/DataModel/BroseLiveHMIData.swift",
+      "line": 27,
+      "symbol": "BroseLiveHMIData.Internal",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Helper/OptionSet+Iterable.swift",
+      "line": 13,
+      "symbol": "OptionSet.elements()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Helper/OptionSet+Iterable.swift",
+      "line": 30,
+      "symbol": "OptionSet.count",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK"
+}
