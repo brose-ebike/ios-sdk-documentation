@@ -14,7 +14,7 @@
     <a title="Getting Started  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">BroseSDK for iOS</a> (79% documented)</p>
+        <p><a href="index.html">BroseSDK for iOS</a> (99% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -77,10 +77,19 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Enums/BikeInformationError.html">BikeInformationError</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/BroseLogLevel.html">BroseLogLevel</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/BroseSDKLocale.html">BroseSDKLocale</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/BroseSupportProfile.html">BroseSupportProfile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ConnectionError.html">ConnectionError</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/ConnectionEvent.html">ConnectionEvent</a>
@@ -90,6 +99,12 @@
           <li class="nav-group-name">
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/BikeErrorManagerDelegate.html">BikeErrorManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/BroseBikeControlManager.html">BroseBikeControlManager</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Protocols/BroseBikeInformationManager.html">BroseBikeInformationManager</a>
               </li>
@@ -103,6 +118,9 @@
                 <a href="Protocols/BroseConnectionManagerDelegate.html">BroseConnectionManagerDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="Protocols/BroseErrorManager.html">BroseErrorManager</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/BroseLogger.html">BroseLogger</a>
               </li>
             </ul>
@@ -110,6 +128,9 @@
           <li class="nav-group-name">
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/BroseBikeErrorInformation.html">BroseBikeErrorInformation</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Structs/BroseLiveBatteryData.html">BroseLiveBatteryData</a>
               </li>
@@ -134,30 +155,34 @@
 <h2 id='intialize-the-sdk' class='heading'>Intialize the SDK</h2>
 
 <p>You can simply initialize the BroseSDK by doing </p>
-<pre class="highlight plaintext"><code>let broseSDK = BroseSDK()
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">broseSDK</span> <span class="o">=</span> <span class="kt">BroseSDK</span><span class="p">()</span>
 </code></pre>
 
 <p>When you are having an API Key you can configure the SDK with it:</p>
-<pre class="highlight plaintext"><code>let apiKey = "YOUR_API_KEY"
-let configuration = BroseSDKConfiguration(apiKey: apiKey)
-let broseSDK = BroseSDK(configuration: configuration)
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">apiKey</span> <span class="o">=</span> <span class="s">"YOUR_API_KEY"</span>
+<span class="k">let</span> <span class="nv">configuration</span> <span class="o">=</span> <span class="kt">BroseSDKConfiguration</span><span class="p">(</span><span class="nv">apiKey</span><span class="p">:</span> <span class="n">apiKey</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">broseSDK</span> <span class="o">=</span> <span class="kt">BroseSDK</span><span class="p">(</span><span class="nv">configuration</span><span class="p">:</span> <span class="n">configuration</span><span class="p">)</span>
+</code></pre>
+
+<p>If you want to get a German instead of an English localization for the error information you can do this by setting the locale in the configuration:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">configuration</span> <span class="o">=</span> <span class="kt">BroseSDKConfiguration</span><span class="p">(</span><span class="nv">locale</span><span class="p">:</span> <span class="o">.</span><span class="n">german</span><span class="p">)</span>
 </code></pre>
 <h2 id='attaching-a-logger' class='heading'>Attaching a logger</h2>
 
 <p>To attach a logger to the SDK you need to implement the <code><a href="Protocols/BroseLogger.html">BroseLogger</a></code> protocol:</p>
-<pre class="highlight plaintext"><code>public protocol BroseLogger {
-    func log(message: String, logLevel: BroseLogLevel)
-}
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BroseLogger</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">logLevel</span><span class="p">:</span> <span class="kt">BroseLogLevel</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 
 <p>After that you can attach the Logger instance to the SDK:</p>
-<pre class="highlight plaintext"><code>broseSDK.attach(logger: BroseLoggerImpl())
+<pre class="highlight swift"><code><span class="n">broseSDK</span><span class="o">.</span><span class="nf">attach</span><span class="p">(</span><span class="nv">logger</span><span class="p">:</span> <span class="kt">BroseLoggerImpl</span><span class="p">())</span>
 </code></pre>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-04-01)</p>
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-05-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

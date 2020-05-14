@@ -15,7 +15,7 @@
     <a title="ConnectionEvent Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BroseSDK for iOS</a> (79% documented)</p>
+        <p><a href="../index.html">BroseSDK for iOS</a> (99% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -78,10 +78,19 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums/BikeInformationError.html">BikeInformationError</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/BroseLogLevel.html">BroseLogLevel</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/BroseSDKLocale.html">BroseSDKLocale</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/BroseSupportProfile.html">BroseSupportProfile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ConnectionError.html">ConnectionError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ConnectionEvent.html">ConnectionEvent</a>
@@ -91,6 +100,12 @@
           <li class="nav-group-name">
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BikeErrorManagerDelegate.html">BikeErrorManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BroseBikeControlManager.html">BroseBikeControlManager</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BroseBikeInformationManager.html">BroseBikeInformationManager</a>
               </li>
@@ -104,6 +119,9 @@
                 <a href="../Protocols/BroseConnectionManagerDelegate.html">BroseConnectionManagerDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/BroseErrorManager.html">BroseErrorManager</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/BroseLogger.html">BroseLogger</a>
               </li>
             </ul>
@@ -111,6 +129,9 @@
           <li class="nav-group-name">
             <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/BroseBikeErrorInformation.html">BroseBikeErrorInformation</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Structs/BroseLiveBatteryData.html">BroseLiveBatteryData</a>
               </li>
@@ -134,6 +155,7 @@
               <div class="declaration">
                 <div class="language">
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ConnectionEvent</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ConnectionEvent</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                 </div>
               </div>
@@ -173,9 +195,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8BroseSDK15ConnectionEventO12disconnectedyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/disconnected" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8BroseSDK15ConnectionEventO12disconnectedyA2CmF">disconnected</a>
+                    <a name="/s:8BroseSDK15ConnectionEventO12disconnectedyAcA0C5ErrorOSgcACmF"></a>
+                    <a name="//apple_ref/swift/Element/disconnected(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8BroseSDK15ConnectionEventO12disconnectedyAcA0C5ErrorOSgcACmF">disconnected(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -190,7 +212,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">disconnected</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">disconnected</span><span class="p">(</span><span class="kt"><a href="../Enums/ConnectionError.html">ConnectionError</a></span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -200,9 +222,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8BroseSDK15ConnectionEventO10outOfRangeyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/outOfRange" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8BroseSDK15ConnectionEventO10outOfRangeyA2CmF">outOfRange</a>
+                    <a name="/s:8BroseSDK15ConnectionEventO16connectionFailedyAcA0C5ErrorOcACmF"></a>
+                    <a name="//apple_ref/swift/Element/connectionFailed(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8BroseSDK15ConnectionEventO16connectionFailedyAcA0C5ErrorOcACmF">connectionFailed(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -210,14 +232,53 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The connected bike got out of range</p>
+                        <p>The connection could not be established</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">outOfRange</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">connectionFailed</span><span class="p">(</span><span class="kt"><a href="../Enums/ConnectionError.html">ConnectionError</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Enums%20&amp;%20Constants"></a>
+                <a name="//apple_ref/swift/Section/Enums &amp; Constants" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Enums%20&amp;%20Constants"></a>
+                  <h3 class="section-name"><p>Enums &amp; Constants</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SQ2eeoiySbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">ConnectionEvent</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">ConnectionEvent</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -229,7 +290,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-04-01)</p>
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-05-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
