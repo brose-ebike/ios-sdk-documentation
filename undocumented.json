@@ -1,61 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/DataModel/BroseLiveData+Internal.swift",
-      "line": 12,
-      "symbol": "BroseLiveData.errorCodes",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Helper/NSManagedObject+FetchRequest.swift",
-      "line": 13,
-      "symbol": "CodingUserInfoKey.managedObjectContext",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Helper/NSManagedObject+FetchRequest.swift",
-      "line": 17,
-      "symbol": "NSManagedObject.createFetchRequest()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Helper/NSManagedObjectContext+Delete.swift",
-      "line": 12,
-      "symbol": "NSManagedObjectContext.deleteAllObjectsFor(entityName:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Telemetry/Service/BroseTelemetryCoreDataService.swift",
-      "line": 93,
-      "symbol": "BroseTelemetryCoreDataServiceImpl",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Telemetry/Service/BroseTelemetryCoreDataService.swift",
-      "line": 255,
-      "symbol": "BroseTelemetryCoreDataServiceImpl",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Telemetry/Service/BroseTelemetryManagementService.swift",
-      "line": 48,
-      "symbol": "BroseTelemetryManagementServiceImpl",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK/BroseSDK/Telemetry/Service/BroseTelemetryManagementService.swift",
-      "line": 142,
-      "symbol": "BroseTelemetryManagementServiceImpl",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    }
+
   ],
-  "source_directory": "/Users/niclasraabe/Developer/gcx/brose-ios-sdk/BroseSDK"
+  "source_directory": "/Users/niclasraabe/Developer/brose/ios-sdk/BroseSDK"
 }
